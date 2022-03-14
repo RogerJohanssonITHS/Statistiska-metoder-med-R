@@ -1,0 +1,5 @@
+x<-c( 1:20, 100, 200, 300)
+y <- qt(0.025, x)
+plot(y)
+lines(y)
+abline(h=qnorm(0.025))

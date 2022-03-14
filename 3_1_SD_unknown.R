@@ -1,0 +1,8 @@
+x<-seq(-4, 4, 0.1)
+y<-  dnorm(x)
+plot(x,y,  type="l" )
+lines(x, dt(x, 10), col="red" )
+lines(x, dt(x, 3), col="blue" )
+abline(v=qnorm(0.025))
+abline(v=qt(0.025, 10), col="red")
+abline(v=qt(0.025, 3), col="blue")
